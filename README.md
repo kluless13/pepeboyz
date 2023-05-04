@@ -1,4 +1,6 @@
 # pepeboyz
 cool tings for le frog
 
-makin bots rn
+token tracker for bot. 
+
+using discord API key and coinGecko API.
