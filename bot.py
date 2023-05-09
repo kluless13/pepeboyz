@@ -119,7 +119,7 @@ async def detectPriceAlert(crypto,priceTargets):
 
 
 # instantiate a discord client
-client = discord.Client()
+client = discord.Client(intents=discord.Intents.default())
 
 @client.event
 async def on_ready():
@@ -178,7 +178,5 @@ async def on_message(message):
     await detectPriceAlert(db["detect crypto"],db["detect price"])
   
 
-keep_alive()
-
-BOT_TOKEN = 'YOUR_BOT_TOKEN'
+BOT_TOKEN = 'token'
 client.run(BOT_TOKEN)
